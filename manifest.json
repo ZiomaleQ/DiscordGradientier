@@ -1,0 +1,23 @@
+{
+  "name": "DiscordGradientier",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "A Chromium extension to add gradient to private message channels.",
+  "icons": {
+    "128": "icons/discord.png"
+  },
+  "permissions": [
+    "tabs",
+    "https://discord.com//*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "replacer.js"
+      ]
+    }
+  ]
+}
